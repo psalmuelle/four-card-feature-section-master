@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: hsl(0, 0%, 98%);
+}
+
+
+header{
+margin: 5% auto;
+margin-bottom: 3.6rem;
+text-align: center;
+color:hsl(234, 12%, 34%) ;
+width: 35rem;
+
+}
+header h1{
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+header h2{
+    font-size: 2.5rem;
+}
+header p{
+    margin-top: 0.5rem;
+color:hsl(229, 6%, 66%) ;
+}
+
+.features-container{
+
+width: 75rem;
+margin: 0 auto;
+margin-top: 5rem;
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr); ;
+gap: 2rem;
+grid-template-areas: 
+    "one two four"
+    "one three four"; 
+align-items: center;
+justify-items: center;
+
+}
+
+.feature{
+width: 23.5rem;
+height: 16.2rem;
+
+border-radius: 0.3rem;
+background: white;
+padding: 2rem;
+position: relative;
+box-shadow: 2px 7px 10px 3px rgba(163,165,174,0.72);
+-webkit-box-shadow: 2px 7px 10px 3px rgba(163,165,174,0.72);
+-moz-box-shadow: 2px 7px 10px 3px rgba(163,165,174,0.72);
+}
+.one{
+  border-top: 0.3rem solid hsl(180, 62%, 55%); 
+  grid-row-start: 1;
+  grid-row-end: 3;
+ grid-area: one;
+ 
+}
+.two{
+    border-top: 0.3rem solid hsl(0, 78%, 62%);
+    grid-area: two;
+}
+.three{
+    border-top: 0.3rem solid hsl(34, 97%, 64%);
+    grid-area: three;
+}
+.four{
+    border-top: 0.3rem solid hsl(212, 86%, 64%);
+   grid-area: four;
+}
+
+.feature h1{
+    font-size: 1.4rem;
+    color: hsl(234, 12%, 34%);
+}
+.feature p{
+    margin-top: 0.7rem;
+    font-size: 0.8rem;
+    color: hsl(229, 6%, 66%);
+}
+.feature img{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+@media screen and (max-width: 1130px) {
+    header{
+        width: 75%;
+        margin-top: 4rem;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    header h2{
+        font-size: 2rem;
+    }
+    header p{
+        width: 25rem;
+        margin: 0 auto;
+        margin-top: 0.5rem;
+    }
+   .feature{
+       width: 20.5rem;
+       height: 15rem;
+    
+   }
+   .features-container{
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+   }
+}
+@media screen and (max-width:533px) {
+    header{
+        width: 80%;
+        margin-top: 6rem;
+    }
+    header h1{
+        font-size: 1.5rem;
+    }
+    header h2{
+        font-size: 1.5rem;
+        margin-top: 0.8rem;
+    }
+    header p{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+    }
+    .feature img{
+       width: 4rem;
+    }
+}
